@@ -21,5 +21,9 @@ public class RemitterServiceApplication {
 	public String welcome1(@PathVariable String name) {
 		return "remitter service welcomes"+name;
 	}
+	@GetMapping("/remitter")
+	public String greet() {
+		return "remitter endpoint";
+	}
 
 }
