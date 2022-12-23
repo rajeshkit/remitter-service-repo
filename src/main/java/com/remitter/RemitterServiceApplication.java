@@ -25,5 +25,9 @@ public class RemitterServiceApplication {
 	public String greet() {
 		return "remitter endpoint";
 	}
+	@GetMapping("/remitter/{id}")
+	public String greet1(@PathVariable int id) {
+		return "remitter endpoint:" + id;
+	}
 
 }
